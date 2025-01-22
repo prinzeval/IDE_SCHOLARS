@@ -1,49 +1,102 @@
 .contact {
-    background-color: #f9f9f9;
-    padding: 50px 20px;
+  background-color: #f9f9f9;
+  padding: 50px 20px;
+}
+
+.contact h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+}
+
+.contact form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact label {
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.contact input,
+.contact textarea {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  color: #333;
+}
+
+.contact button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #00c9c9;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.contact button:hover {
+  background-color: #169f9f;
+}
+
+/* WhatsApp Button Styling */
+.whatsapp-contact {
+  position: fixed; /* Fixed at the bottom-right corner */
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000; /* Ensures it stays on top of other elements */
+}
+
+.whatsapp-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px; /* Larger size */
+  height: 60px; /* Larger size */
+  background-color: #25d366;
+  border-radius: 50%; /* Circular button */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: pop 1s infinite; /* Popping animation */
+}
+
+.whatsapp-link img {
+  width: 30px;
+  height: 30px;
+}
+
+.whatsapp-link:hover {
+  transform: scale(1.1); /* Slightly larger on hover */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* More prominent shadow */
+}
+
+@keyframes pop {
+  0%,
+  100% {
+    transform: translateY(0); /* Default position */
   }
-  
-  .contact h2 {
-    font-size: 28px;
-    margin-bottom: 20px;
-    text-align: center;
-    color: #333; /* Updated text color */
+  50% {
+    transform: translateY(-10px); /* Moves up slightly */
   }
-  
-  .contact form {
-    max-width: 600px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .whatsapp-link {
+    width: 50px; /* Slightly smaller for mobile screens */
+    height: 50px;
   }
-  
-  .contact label {
-    font-size: 16px;
-    margin-bottom: 5px;
-    color: #333; /* Updated text color */
+
+  .whatsapp-link img {
+    width: 24px;
+    height: 24px;
   }
-  
-  .contact input,
-  .contact textarea {
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    color: #333; /* Updated text color */
-  }
-  
-  .contact button {
-    padding: 10px 20px;
-    font-size: 16px;
-  
-    background-color: #00c9c9;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  .contact button:hover {
-    background-color: #169f9f;
-  }
-  
+}
