@@ -1,0 +1,13 @@
+.divide-content {
+    display: flex;
+    height: 150px;
+    justify-content: center;
+    align-items: center; /* Added to vertically center the image */
+    padding: 20px 10px;
+  }
+  
+  .divide-content img {
+    max-height: 100%; /* Ensures the image scales well within the container */
+    max-width: 100%; /* Ensures the image scales well within the container */
+  }
+  

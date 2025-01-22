@@ -16,6 +16,7 @@
   display: none;
   cursor: pointer;
   font-size: 24px;
+  z-index: 1001; /* Added to ensure it's on top */
 }
 
 .navbar ul {

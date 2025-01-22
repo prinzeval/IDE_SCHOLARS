@@ -1,11 +1,18 @@
 import React from 'react'
 import './about.css'
 
+
+
 const About = () => {
   return (
     <section id="about" className="about">
-      <h2>About Us</h2>
-      <p>Welcome to Study Abroad Consultants! We help students find the perfect study abroad programs and navigate the application process smoothly.</p>
+      <div className="about-content">
+        <h2>About Us</h2>
+        <p>Welcome to Study Abroad Consultants!<br/>
+        We help students find the perfect<br/> 
+        <span className="highlight">study abroad programs and navigate the <br/>
+        application process smoothly.</span></p>
+      </div>
     </section>
   );
 };

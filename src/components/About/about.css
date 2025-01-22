@@ -1,21 +1,42 @@
 .about {
-    background-image: url('https://studyabroad.com.cy/wp-content/uploads/admin/2018/11/homepage.jpg');
-    background-size: cover;
-    background-position: center;
-    padding: 500px 20px;
-    text-align: center;
-    color: #fff;
-  }
-  
-  .about h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
-  }
-  
-  .about p {
-    font-size: 18px;
-    line-height: 1.6;
-    max-width: 800px;
-    margin: 0 auto;
-  }
-  
+  position: relative;
+  background-image: url('https://studyabroad.com.cy/wp-content/uploads/admin/2018/11/homepage.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 150px 30px;
+  color: #fff;
+}
+
+.about::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.about-content {
+  position: relative;
+  z-index: 2;
+  margin: 0 auto;
+}
+
+.about h2 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.about p {
+  font-size: 25px;
+  line-height: 1.5;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+/* Highlighted text */ 
+.highlight{ 
+  color: #00bcb2;
+ }
