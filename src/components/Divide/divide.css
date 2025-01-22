@@ -1,13 +1,43 @@
+/* Container Styling */
 .divide-content {
     display: flex;
-    height: 150px;
     justify-content: center;
-    align-items: center; /* Added to vertically center the image */
-    padding: 20px 10px;
+    align-items: center; /* Vertically centers the logos */
+    gap: 900px; /* Adds spacing between the logos */
+    padding: 20px;
+    background-color: #f9f9f9; /* Optional: Light background */
+    height: 150px; /* Adjust height as needed */
   }
   
-  .divide-content img {
-    max-height: 100%; /* Ensures the image scales well within the container */
-    max-width: 100%; /* Ensures the image scales well within the container */
+  /* Common Styling for Logos */
+  .div-logo {
+    max-height: 100%;
+    max-width: 100%;
+    animation: rotate-logo 100s linear infinite; /* Default rotation animation */
+  }
+  
+  /* Add unique animation for the second logo */
+  .logo2 {
+    animation: rotate-logo-reverse 100s linear infinite; /* Rotates in reverse direction */
+  }
+  
+  /* Rotate Animation */
+  @keyframes rotate-logo {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  /* Reverse Rotate Animation */
+  @keyframes rotate-logo-reverse {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(-360deg);
+    }
   }
   

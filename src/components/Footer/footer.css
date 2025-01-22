@@ -1,12 +1,73 @@
+/* Footer Base Styles */
 .footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-  }
-  
-  .footer p {
-    margin: 0;
-    font-size: 14px;
-  }
-  
+  background-color: #1a1a3b;
+  color: white;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+/* Footer Logo Section */
+.footer-logo img {
+  max-width: 150px;
+}
+
+/* Footer Sections */
+.footer-sections {
+  display: flex;
+  gap: 50px;
+}
+
+.footer-section {
+  margin: 10px 0;
+}
+
+.footer-section h4 {
+  font-size: 18px;
+  color: #00c9c9;
+  margin-bottom: 10px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #ccc;
+}
+
+.footer-section ul li:hover {
+  color: #00c9c9;
+  cursor: pointer;
+}
+
+/* Social Media Section */
+.footer-social {
+  margin-top: 20px;
+}
+
+.footer-social h4 {
+  font-size: 18px;
+  color: #00c9c9;
+  margin-bottom: 10px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icons a {
+  color: #ccc;
+  font-size: 20px;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #00bcb2;
+}
