@@ -7,7 +7,7 @@ const heroSections = [
   {
     title: "Academic Counseling",
     description: "Making informed decisions about your future is crucial. We help you analyze your options and provide meaningful advice.",
-    imgSrc: "https://media.istockphoto.com/id/2184618517/photo/students-preparing-for-the-next-lecture.jpg?s=612x612&w=0&k=20&c=EkrdzRhP4jTM3FtCwZkl_JaqB8de3Yo6KjQcGwAzkGc=",
+    imgSrc: "https://img.freepik.com/free-photo/students-talking-street-smiling_23-2147657120.jpg",
     buttons: ["Book an appointment with us", "How we can Help"],
     reverse: false, // Controls the layout
   },

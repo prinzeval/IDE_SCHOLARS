@@ -1,12 +1,14 @@
 import React from 'react';
 import './footer.css';
 import footerlogo from '../../assets/PNG/Logo Secondary White.png'
+import divide_logo2 from '../../assets/PNG/Logo Primary Master.png';
 
 const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-logo">
         <img src={footerlogo} alt="Footer Logo" />
+        <img src={divide_logo2} alt="Divide Logo Black" className="div-logo logo2" />
       </div>
       <div className="footer-sections">
         <div className="footer-section">

@@ -8,7 +8,12 @@
   align-items: flex-start;
   flex-wrap: wrap;
 }
-
+.footer-logo{
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+}
 /* Footer Logo Section */
 .footer-logo img {
   max-width: 150px;

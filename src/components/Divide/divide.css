@@ -13,31 +13,5 @@
   .div-logo {
     max-height: 100%;
     max-width: 100%;
-    animation: rotate-logo 100s linear infinite; /* Default rotation animation */
   }
-  
-  /* Add unique animation for the second logo */
-  .logo2 {
-    animation: rotate-logo-reverse 100s linear infinite; /* Rotates in reverse direction */
-  }
-  
-  /* Rotate Animation */
-  @keyframes rotate-logo {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
-  }
-  
-  /* Reverse Rotate Animation */
-  @keyframes rotate-logo-reverse {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(-360deg);
-    }
-  }
-  
+    

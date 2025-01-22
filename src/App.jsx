@@ -6,7 +6,7 @@ function App() {
     <div>
       <Navbar />
       <About />
-      <Divide />
+      {/* <Divide /> */}
       <Hero />
       <Contact />
       <Footer />
