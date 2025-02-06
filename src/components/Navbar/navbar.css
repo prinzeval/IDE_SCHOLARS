@@ -5,6 +5,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
 .navbar img {
@@ -39,6 +43,7 @@
 /* Hamburger Menu */
 .nav-menu {
   display: flex;
+  
 }
 
 .nav-menu.active {
@@ -54,6 +59,7 @@
   box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
   transform: translateX(0);
   transition: transform 0.3s ease-in-out;
+  z-index: 1000; /* Added to ensure it's on top */
 }
 
 .nav-menu a {
@@ -77,5 +83,11 @@
 
   .nav-menu {
     display: none;
+
+  }
+
+  .navbar img {
+    width: 200px; /* Adjust the width as needed */
+    height: 30px; /* Adjust the height as needed */
   }
 }

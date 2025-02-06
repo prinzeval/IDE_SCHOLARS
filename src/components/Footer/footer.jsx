@@ -1,7 +1,7 @@
 import React from 'react';
 import './footer.css';
 import footerlogo from '../../assets/PNG/Logo Secondary White.png'
-import divide_logo2 from '../../assets/PNG/Logo Primary Master.png';
+import divide_logo2 from '../../assets/PNG/Logo Primary white.png';
 
 const Footer = () => {
   return (

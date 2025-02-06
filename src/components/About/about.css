@@ -37,6 +37,64 @@
 }
 
 /* Highlighted text */ 
-.highlight{ 
-  color:#fff;
- }
+.highlight { 
+  color: #fff;
+}
+
+/* CTA Button Styles */
+.cta-button {
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #008080; /* Teal color */
+  border: none;
+  border-radius: 5px 5px 5px 20px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  margin-top: 20px; /* Add space above the button */
+}
+
+.cta-button:hover {
+  background-color: #006666; /* Darker teal on hover */
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+  .about {
+    padding: 100px 20px;
+  }
+
+  .about h2 {
+    font-size: 36px;
+  }
+
+  .about p {
+    font-size: 20px;
+  }
+
+  .cta-button {
+    padding: 10px 20px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about {
+    padding: 80px 15px;
+  }
+
+  .about h2 {
+    font-size: 28px;
+  }
+
+  .about p {
+    font-size: 18px;
+  }
+
+  .cta-button {
+    padding: 8px 15px;
+    font-size: 16px;
+  }
+}

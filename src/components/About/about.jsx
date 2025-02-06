@@ -1,7 +1,5 @@
-import React from 'react'
-import './about.css'
-
-
+import React from 'react';
+import './about.css';
 
 const About = () => {
   return (
@@ -12,6 +10,11 @@ const About = () => {
         We help students find the perfect<br/> 
         <span className="highlight">study abroad programs and navigate the <br/>
         application process smoothly.</span></p>
+        
+        {/* Call-to-Action Button */}
+        <a href="#contact" className="cta-button">
+          Get Started Today
+        </a>
       </div>
     </section>
   );
