@@ -3,8 +3,8 @@ import './contact.css';
 import whatsappIcon from '../../assets/icons8-whatsapp-48.png'; // Adjust the path to your WhatsApp icon
 
 const Contact = () => {
-  const whatsappNumber = "1234567890"; // Replace with your WhatsApp number
-  const whatsappMessage = "Hello, I would like to get in touch with you!"; // Pre-filled message
+  const whatsappNumber = "+234706823 4599"; // Replace with your WhatsApp number
+  const whatsappMessage = ""; // Pre-filled message
 
   return (
     <section id="contact" className="contact">
